@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cielo y Mar</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/c286f49216.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body class="text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-teal-600">Cielo y Mar</a>
+      <button id="btn-menu" class="sm:hidden p-2 focus:ring-2 focus:ring-teal-500 rounded">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="menu" class="hidden sm:flex space-x-6">
+        <a href="#hero" class="hover:text-teal-500">Inicio</a>
+        <a href="#features" class="hover:text-teal-500">Servicios</a>
+        <a href="#gallery" class="hover:text-teal-500">Galería</a>
+        <a href="#pricing" class="hover:text-teal-500">Precios</a>
+        <a href="#calendar" class="hover:text-teal-500">Calendario</a>
+        <a href="#faq" class="hover:text-teal-500">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+
+    <!-- HERO -->
+    <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center"
+      style="background-image:url('assets/img/14.jpg')">
+
+
+      <!-- Capa oscura para mejorar el contraste -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Contenido del hero -->
+      <div class="relative z-10 card hero-card p-8 md:p-12 rounded-xl highlighted text-center fade-in px-4">
+
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">
+          Casa de Playa Cielo y Mar
+        </h1>
+
+
+        <p class="text-lg md:text-2xl mb-6 text-white drop-shadow">El lugar donde el tiempo se detiene</p>
+        <a href="#gallery"
+          class="inline-block px-8 py-4 bg-gradient-to-r from-teal-400 to-teal-600 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transform transition">
+          Explorar Galería
+        </a>
+      </div>
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section id="features" class="py-16">
+      <h2 class="text-3xl font-semibold text-center mb-12 fade-in">Lo que Ofrecemos</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Servicio 1: Piscinas -->
+        <div class="card p-6 rounded-xl text-center shadow-md hover:shadow-xl transition fade-in">
+          <i class="fas fa-swimming-pool text-teal-500 text-3xl mb-4"></i>
+          <h3 class="text-lg font-semibold mb-2">Piscinas para Todos</h3>
+          <p class="text-sm text-gray-600">Disfruta de dos piscinas para adultos y dos para niños, ideales para todas
+            las edades.</p>
+        </div>
+
+        <!-- Servicio 2: Cocina completa -->
+        <div class="card p-6 rounded-xl text-center shadow-md hover:shadow-xl transition fade-in">
+          <i class="fas fa-blender text-teal-500 text-3xl mb-4"></i>
+          <h3 class="text-lg font-semibold mb-2">Cocina Totalmente Equipada</h3>
+          <p class="text-sm text-gray-600">Microondas, horno, tostador, licuadora, batería de cocina, vajilla, platos y
+            cafetera.</p>
+        </div>
+
+        <!-- Servicio 3: Áreas comunes -->
+        <div class="card p-6 rounded-xl text-center shadow-md hover:shadow-xl transition fade-in">
+          <i class="fas fa-chair text-teal-500 text-3xl mb-4"></i>
+          <h3 class="text-lg font-semibold mb-2">Áreas Comunes</h3>
+          <p class="text-sm text-gray-600">Glorieta, parqueo, área de hamacas, sillas y mesa, baños y regaderas
+            disponibles para tu comodidad.</p>
+        </div>
+
+        <!-- Servicio 4: Casa moderna -->
+        <div class="card p-6 rounded-xl text-center shadow-md hover:shadow-xl transition fade-in">
+          <i class="fas fa-home text-teal-500 text-3xl mb-4"></i>
+          <h3 class="text-lg font-semibold mb-2">Casa Moderna Amueblada</h3>
+          <p class="text-sm text-gray-600">Diseñada para albergar cómodamente hasta 8 personas, con espacios amplios y
+            acogedores.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="gallery" class="py-16">
+      <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Galería</h2>
+
+      <!-- Casa -->
+      <h3 class="text-2xl font-semibold text-center mb-8 fade-in">Casa</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="assets/img/20.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/20.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/2.jpeg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/2.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/3.jpeg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/3.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/7.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/7.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/8.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/8.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/9.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/9.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/15.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/15.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/16.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/16.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/17.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/17.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/19.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/19.jpg" />
+            </a>
+          </div>
+          <!-- más slides -->
+        </div>
+        <!-- botones opcionales -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <!-- más slides -->
+      </div>
+
+
+      <!-- Área Común -->
+      <h3 class="text-2xl font-semibold text-center mt-16 mb-8 fade-in">Área Común</h3>
+      <div class="swiper mySwiperArea">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="assets/img/21.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/21.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/1.jpeg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/1.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/11.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/11.jpg" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="assets/img/22.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/22.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/23.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/23.jpg" />
+            </a>
+          </div>
+        </div>
+        <!-- Botones -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Playa -->
+      <h3 class="text-2xl font-semibold text-center mt-16 mb-8 fade-in">Playa</h3>
+      <div class="swiper mySwiperPlaya">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="assets/img/4.jpeg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/4.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/5.jpeg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/5.jpeg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/6.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/6.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/10.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/10.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/13.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/13.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/14.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/14.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/18.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/18.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/img/24.jpg" class="glightbox" data-gallery="galeria">
+              <img src="assets/img/24.jpg" />
+            </a>
+          </div>
+        </div>
+        <!-- Botones -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+
+
+    <!-- PRECIOS & PAQUETES -->
+    <section id="pricing" class="py-16">
+      <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Precios & Paquetes</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:items-stretch">
+
+        <!-- Tarjeta 1 -->
+        <div class="card p-6 rounded-xl shadow-lg hover:shadow-xl transition fade-in h-full flex flex-col justify-between">
+
+          <h3 class="text-xl font-bold mb-4 text-teal-600 text-center">Escapada de Día</h3>
+          <p class="text-gray-700 text-center mb-4">Ideal para pasar el día con amigos o familia</p>
+          <ul class="mb-6 space-y-2 text-gray-600 text-sm">
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Acceso a todas las áreas</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Piscina y cocina incluida</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Parqueo privado</li>
+          </ul>
+          <div class="text-center mt-4">
+            <p class="text-2xl font-bold text-teal-600 mb-4">$60 / día</p>
+            <a href="#contact" class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card p-6 rounded-xl shadow-lg hover:shadow-xl transition fade-in h-full flex flex-col justify-between">
+          <h3 class="text-xl font-bold mb-4 text-teal-600 text-center">Fin de Semana</h3>
+          <p class="text-gray-700 text-center mb-4">2 noches en Casa Cielo y Mar con todas las comodidades</p>
+          <ul class="mb-6 space-y-2 text-gray-600 text-sm">
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Glorieta con mesa y 4 sillas frente al mar</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Zona de BBQ, duchas y baños</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>4 piscinas para disfrutar en familia</li>
+          </ul>
+          <div class="text-center mt-4">
+            <p class="text-2xl font-bold text-teal-600 mb-4">$325 / paquete</p>
+            <a href="#contact" class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card p-6 rounded-xl shadow-lg hover:shadow-xl transition fade-in h-full flex flex-col justify-between">
+          <h3 class="text-xl font-bold mb-4 text-teal-600 text-center">Paquete Premium</h3>
+          <p class="text-gray-700 text-center mb-4">Estadía extendida para una experiencia inolvidable</p>
+          <ul class="mb-6 space-y-2 text-gray-600 text-sm">
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Hospedaje de 7 días / 6 noches</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Acceso a glorieta, piscinas y áreas comunes</li>
+            <li><i class="fas fa-check text-teal-500 mr-2"></i>Formulario incluye fecha de viaje y número de celular</li>
+          </ul>
+          <div class="text-center mt-4">
+            <p class="text-2xl font-bold text-teal-600 mb-4">$850 / paquete</p>
+            <a href="#contact" class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN GENERAL Y CÓMO LLEGAR -->
+    <section id="location" class="py-16 px-4 sm:px-0">
+      <h2 class="text-3xl font-semibold text-center mb-12 fade-in">Información General & Cómo Llegar</h2>
+    
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start fade-in">
+        
+        <!-- Información -->
+        <div class="card p-6 rounded-xl shadow-lg text-base text-gray-700 leading-relaxed space-y-4">
+          <p><strong>📍 Ubicación:</strong> Casa de playa en la entrada del caserío de la Barra de Santiago, 2ª fila de la Residencial Las Olas.</p>
+          <div>
+            <p class="font-semibold">🚗 Distancias:</p>
+            <ul class="list-disc list-inside ml-4">
+              <li>10 minutos en carro al centro del caserío</li>
+              <li>5 minutos caminando a la tienda más cercana</li>
+              <li>5 minutos en carro al restaurante “El Chalecito Mexicano”</li>
+            </ul>
+          </div>
+          <p><strong>🚕 Transporte:</strong> Puede consultar en la caseta de seguridad si desea solicitar Uber.</p>
+          <p><strong>🍽️ Comida a domicilio:</strong> Solicite el menú en la caseta de seguridad para entrega directa.</p>
+        </div>
+    
+        <!-- Mapa -->
+        <div class="card p-0 overflow-hidden rounded-xl shadow-lg">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.7207603024854!2d-89.9704490242694!3d13.6747361990718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62a928a7c257b9%3A0x1253daed8bd8b418!2sResidencial%20Turistico%20Las%20Olas!5e0!3m2!1sen!2ssv!4v1746918086247!5m2!1sen!2ssv" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+
+
+        <!-- CALENDARIO -->
+        <section id="calendar" class="py-16">
+          <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Calendario de Disponibilidad</h2>
+          <div class="iframe-responsive max-w-4xl mx-auto rounded-xl highlighted fade-in">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=7731e4d9781785e85e119edb108b06ba7f4176a892bb226ac5a649dbc4d21afb%40group.calendar.google.com&ctz=America%2FEl_Salvador"
+              loading="lazy"></iframe>
+          </div>
+        </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 px-4 sm:px-0">
+
+      <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Preguntas Frecuentes</h2>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- Pregunta 1 -->
+        <div class="bg-white/90 p-4 rounded-xl shadow-md fade-in">
+          <div class="question flex justify-between items-center text-lg font-semibold cursor-pointer">
+            <span>¿Cuál es el horario de entrada y salida?</span>
+            <i class="fas fa-chevron-down transition-transform"></i>
+          </div>
+          <div class="answer mt-3 text-gray-700 text-sm">
+            La entrada es a partir de las 3:00 PM y la salida es antes de las 01:00 PM del día siguiente.
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="bg-white/90 p-4 rounded-xl shadow-md fade-in">
+          <div class="question flex justify-between items-center text-lg font-semibold cursor-pointer">
+            <span>¿Se permite llevar mascotas?</span>
+            <i class="fas fa-chevron-down transition-transform"></i>
+          </div>
+          <div class="answer mt-3 text-gray-700 text-sm">
+            ¡Sí! Aceptamos mascotas pequeñas bajo supervisión y con previa notificación.
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="bg-white/90 p-4 rounded-xl shadow-md fade-in">
+          <div class="question flex justify-between items-center text-lg font-semibold cursor-pointer">
+            <span>¿Qué incluye el alquiler?</span>
+            <i class="fas fa-chevron-down transition-transform"></i>
+          </div>
+          <div class="answer mt-3 text-gray-700 text-sm">
+            El alquiler incluye acceso total a las instalaciones, piscina, cocina equipada, parqueo, zona de hamacas y
+            área de barbacoa.
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="bg-white/90 p-4 rounded-xl shadow-md fade-in">
+          <div class="question flex justify-between items-center text-lg font-semibold cursor-pointer">
+            <span>¿Hay descuento por estancias largas?</span>
+            <i class="fas fa-chevron-down transition-transform"></i>
+          </div>
+          <div class="answer mt-3 text-gray-700 text-sm">
+            Sí, ofrecemos descuentos especiales para reservas de más de 3 noches. Contáctanos para cotizar tu caso
+            específico.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NORMAS DE USO -->
+    <section id="rules" class="py-16 px-4 sm:px-0">
+      <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Normas de Uso</h2>
+      <div class="card max-w-4xl mx-auto p-6 rounded-xl shadow-lg fade-in space-y-4 text-base text-gray-700 leading-relaxed">
+        <p><strong>🔹 Capacidad permitida:</strong> Máximo 8 personas en la primera planta y hasta 12 en toda la casa, sin importar la edad.</p>
+        <p><strong>💵 Pago adicional:</strong> $5 por día por cada persona adicional de la 9.ª a la 12.ª, pagadero al ingresar a la residencial.</p>
+        <p><strong>🛂 Registro obligatorio:</strong> Todas las personas deben estar registradas en la caseta. Sin registro no hay acceso.</p>
+        <p><strong>🏡 Cuidado de la casa:</strong> Por favor, dejar la casa tal como la encontró. Será un gusto recibirle en futuras fechas.</p>
+        <p><strong>🚪 Acceso a segunda planta:</strong> Solo disponible si está incluida en la reservación.</p>
+        <p><strong>🔇 Horarios de silencio:</strong> De 10:00 p.m. a 6:00 a.m. por respeto a los vecinos.</p>
+        <p><strong>🚫 Áreas privadas:</strong> Respetar las propiedades vecinas. Solo las piscinas y ranchitos junto a ellas son públicos.</p>
+      </div>
+    </section>
+    
+    
+
+
+    <!-- FORMULARIO (Google Form Embed) -->
+    <section id="contact" class="py-16 px-4 sm:px-0">
+
+
+      <h2 class="text-3xl font-semibold text-center mb-8 fade-in">Solicita Información</h2>
+      <div class="max-w-4xl mx-auto iframe-responsive min-h-[500px] sm:min-h-0 rounded-xl highlighted fade-in">
+
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeJZiswSMtuAlgSx2h4c11AfuQ8-1PWQX4cDXrACF3lI_67Tw/viewform?embedded=true"
+          loading="lazy">Cargando…</iframe>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  <!-- Scripts -->
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Mobile menu
+      const btnMenu = document.getElementById('btn-menu');
+      const menu = document.getElementById('menu');
+      if (btnMenu && menu) {
+        btnMenu.onclick = () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('show-mobile');
+          const icon = btnMenu.querySelector('i');
+          icon?.classList.toggle('fa-bars');
+          icon?.classList.toggle('fa-times');
+        };
+      }
+
+      // Fade-in observer
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('visible');
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+      // FAQ accordion
+      document.querySelectorAll('.question').forEach(q => {
+        q.onclick = () => {
+          const a = q.nextElementSibling;
+          if (a) {
+            a.style.display = a.style.display === 'block' ? 'none' : 'block';
+            q.querySelector('i')?.classList.toggle('fa-rotate-180');
+          }
+        };
+      });
+
+      // Inicializa GLightbox
+      const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+      });
+
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+
+
+      });
+
+      // Segundo Swiper para Área Común
+      var swiperArea = new Swiper(".mySwiperArea", {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 30,
+        pagination: {
+          el: ".mySwiperArea .swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".mySwiperArea .swiper-button-next",
+          prevEl: ".mySwiperArea .swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+
+      // Tercer Swiper para Playa
+      var swiperArea = new Swiper(".mySwiperPlaya", {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 30,
+        pagination: {
+          el: ".mySwiperPlaya .swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".mySwiperPlaya .swiper-button-next",
+          prevEl: ".mySwiperPlaya .swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+    });
+
+
+  </script>
+
+</body>
+
+</html>
