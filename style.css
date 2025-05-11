@@ -191,3 +191,16 @@ section:not(#hero) {
     margin: 20px auto;
   }
 
+
+  /* Solo se activa en pantallas grandes */
+@media (min-width: 768px) {
+  .iframe-equal-height {
+    height: 100%;
+  }
+
+  .iframe-equal-height iframe {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+}
