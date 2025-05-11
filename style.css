@@ -219,3 +219,8 @@ section:not(#hero) {
     display: block;
   }
 }
+
+html.glightbox-open,
+body.glightbox-open {
+  height: auto !important;
+}
