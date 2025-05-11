@@ -51,6 +51,21 @@ section:not(#hero) {
     background: transparent !important;
   }
 
+
+  /* Imagen de fondo por defecto: escritorio */
+.hero-bg {
+  background-image: url('assets/img/14.jpg');
+}
+
+/* Imagen de fondo para móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .hero-bg {
+    background-image: url('assets/img/29.jpg'); /* Usa aquí tu imagen vertical optimizada */
+    background-position: center top;
+  }
+}
+
+
 /* Card backdrop */
 .card {
   background-color: rgba(255, 255, 255, 0.8);
